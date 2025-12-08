@@ -1,0 +1,29 @@
+
+
+body {
+    /* A Imagem usada como fundo do site inteiro */
+    background-image: url("background_1.jpg"); /* Mantenha o seu caminho */
+
+    /* Criar o efeito Parallax */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    /*background-size: cover;*/
+}
+
+.espacador {
+    height: 800px; /* Um valor alto para garantir que pode rolar */
+    background-color: #f4f4f4; /* Apenas para distinguir o conteúdo */
+    padding: 20px;
+    box-sizing: border-box; /* Garante que o padding não aumenta a altura total */
+}
+
+.parallax {
+    /* Este elemento já não precisa de ter a imagem de fundo, pois está no body */
+    /* Defina apenas a sua altura e estilo de conteúdo interno */
+    height: 50vh; /* Altura de visualização para este bloco */
+    background-color: rgba(0, 0, 0, 0.4); /* Fundo semi-transparente escuro para destacar o título */
+    color: white; /* Letras brancas */
+    text-align: center;
+    padding-top: 50px;
+}
