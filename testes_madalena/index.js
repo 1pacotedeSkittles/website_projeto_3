@@ -1,10 +1,18 @@
 //CONTAINER
 
 const container = document.getElementById('container');
-let currentX = window.innerWidth;  // Começa à direita
-let currentY = -window.innerHeight; // Começa acima
-let targetX = -window.innerWidth;
-let targetY = window.innerHeight;
+let currentX = 0;  // Começa à direita
+let currentY = 0; // Começa acima
+let targetX = 0;
+let targetY = 0;
+
+//CONTAINER2
+
+const container2 = document.getElementById('container2');
+let currentX2 = 0;  // Começa à esquerda
+let currentY2 = 0;   // Começa abaixo
+let targetX2 = 0;
+let targetY2 = 0;
 
 // Evento de scroll com o wheel
 window.addEventListener('wheel', (e) => {
@@ -12,11 +20,16 @@ window.addEventListener('wheel', (e) => {
             
     // Move diagonal: tanto X como Y baseado no deltaY do scroll
     const scrollAmount = e.deltaY; //quanto scroll (+:baixo; -:cima)
-    targetX += scrollAmount * 0.7; // novo destino X
-    targetY -= scrollAmount * 0.7; // novo destino Y
+    targetX -= scrollAmount * 0.7; // novo destino X
+    targetY += scrollAmount * 0.7; // novo destino Y
     //- pq queremos q o conteudo suba
+
+    targetX2 += scrollAmount * 0.7; // novo destino X
+    targetY2 -= scrollAmount * 0.7; // novo destino Y
+    //+ pq queremos q o conteudo desça
 }, { passive: false }); //permite usar prevent default
  
+
 // Animação suave com requestAnimationFrame
 function animate() {
     // Interpolação suave (easing)
@@ -33,27 +46,6 @@ function animate() {
 
 animate();
 
-
-//CONTAINER2
-
-const container2 = document.getElementById('container2');
-let currentX2 = -window.innerWidth;  // Começa à esquerda
-let currentY2 = window.innerHeight;   // Começa abaixo
-let targetX2 = window.innerWidth;
-let targetY2 = -window.innerHeight;
-
-
-// Evento de scroll com o wheel
-window.addEventListener('wheel', (e) => {
-    e.preventDefault(); //bloqueia o scroll normal da pagina
-            
-    // Move diagonal: tanto X como Y baseado no deltaY do scroll
-    const scrollAmount = e.deltaY; //quanto scroll (+:baixo; -:cima)
-    targetX2 -= scrollAmount * 0.7; // novo destino X
-    targetY2 += scrollAmount * 0.7; // novo destino Y
-    //- pq queremos q o conteudo desça
-}, { passive: false }); //permite usar prevent default
- 
 // Animação suave com requestAnimationFrame
 function animate2() {
     // Interpolação suave (easing)
