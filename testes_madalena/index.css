@@ -14,20 +14,23 @@ body {
 
 
 #container {
-    position: fixed;
-    top: 0;
-    left: 0;
-    transform: translate(-50%, -50%) translate(70vw, 0);/*move 50% da propria largura e altura*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) translate(50vw,-70vh);
+    /*translate(70vw, 0);/*move 50% da propria largura e altura*/
     /*will-change: transform;
     /*transform-origin: center;*/ 
     transition: transform 0.1s ease-out;
 }
 
 #container2 {
-    position: fixed;
-    top: 0;
-    left: 0;
-    transform: translate(-50%, -50%) translate(30vw,100vh); /*100vw-(70vw)*/ /*move 50% da propria largura e altura*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -43px;
+    transform: translate(-50%, -50%) translate(-40vw, 70vh);;
+    /*translate(30vw,100vh); /*100vw-(70vw)*/ /*move 50% da propria largura e altura*/
     /*will-change: transform;
     /*transform-origin: center;*/  
     transition: transform 0.1s ease-out;

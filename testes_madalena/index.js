@@ -2,8 +2,8 @@
 
 const container = document.getElementById('container');
 const rect = container.getBoundingClientRect();
-let currentX = rect.x + rect.width / 2; // centro X
-let currentY = rect.y + rect.height / 2; // centro Y
+let currentX = window.innerWidth*0.5; // centro X
+let currentY = -window.innerWidth*0.7; // centro Y
 let targetX = currentX;
 let targetY = currentY;
 
@@ -11,8 +11,8 @@ let targetY = currentY;
 
 const container2 = document.getElementById('container2');
 const rect2 = container2.getBoundingClientRect();
-let currentX2 = rect2.x + rect2.width / 2; // centro X
-let currentY2 = rect2.y + rect2.height / 2; // centro Y
+let currentX2 = -window.innerWidth*0.5; // centro X
+let currentY2 = window.innerHeight*0.7; // centro Y
 let targetX2 = currentX2;
 let targetY2 = currentY2;
 
