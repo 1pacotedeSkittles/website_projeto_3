@@ -8,24 +8,31 @@
 body {
     overflow: hidden;
     background: #0a0a0a;
-    font-family: 'Arial', sans-serif;
     height: 100vh;
+    width: 100vw;
 }
 
-#container {
+
+#container , #container2{
     position: fixed;
-    top: 0;
-    right: 0;
-    will-change: transform;
-    /*transition: transform 0.1s ease-out;*/
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#container {
+    /*will-change: transform;
+    /*transform-origin: center;*/
+
+    /*translate(70vw, 0); /*para que x,y seja 0,0*/ 
+    transition: transform 0.1s ease-out;
 }
 
 #container2 {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    will-change: transform;
-    /*transition: transform 0.1s ease-out;*/
+    /*will-change: transform;
+    /*transform-origin: center;*/
+
+    /*translate(30vw,100vh); /*para que x,y seja 0,0*/ /*100vw-(70vw)*/  
+    transition: transform 0.1s ease-out;
 }
 
 /*.item {
@@ -59,9 +66,10 @@ body {
 .item , .item2{
     width: 300px;
     height: auto;
-    display: flex;
-    align-items: center;
-    float: left;
+    display: block;
+   /*align-items: center;
+    /*float: left;*/
+    background-color: red;
 }
 
 .instructions {

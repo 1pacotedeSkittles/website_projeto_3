@@ -1,18 +1,23 @@
+const pos_inicial = {
+    container1: { x: window.innerWidth * 0.7, y: 0 },
+    container2: { x: window.innerWidth * (1-0.7), y: window.innerHeight }
+};
+
 //CONTAINER
 
 const container = document.getElementById('container');
-let currentX = 0;  // Começa à direita
-let currentY = 0; // Começa acima
-let targetX = 0;
-let targetY = 0;
+let currentX = pos_inicial.container1.x;  // Começa à direita
+let currentY = pos_inicial.container1.y; // Começa acima
+let targetX = currentX;
+let targetY = currentY;
 
 //CONTAINER2
 
 const container2 = document.getElementById('container2');
-let currentX2 = 0;  // Começa à esquerda
-let currentY2 = 0;   // Começa abaixo
-let targetX2 = 0;
-let targetY2 = 0;
+let currentX2 = pos_inicial.container2.x; // Começa à esquerda
+let currentY2 = pos_inicial.container2.y;  // Começa abaixo
+let targetX2 = currentX2;
+let targetY2 = currentY2;
 
 // Evento de scroll com o wheel
 window.addEventListener('wheel', (e) => {
