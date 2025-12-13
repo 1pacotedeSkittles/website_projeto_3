@@ -31,13 +31,6 @@
     display: grid;
     grid-template-columns: repeat(2,1fr);
     width: 33vw;
-    grid-template-areas:"button1 button2";
     transition: transform 0.1s ease-out;
     align-items: end;
-}
-#sobre{
-    grid-area: button1;
-}
-#conto{
-    grid-area: button2;
 }
