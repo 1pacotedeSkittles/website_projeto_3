@@ -36,6 +36,7 @@ main{
 #text{
     grid-area: text;
     display: grid;
+    row-gap: 4vw;
     grid-template-rows: repeat(2,auto);
 }
 
