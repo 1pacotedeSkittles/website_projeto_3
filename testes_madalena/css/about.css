@@ -52,3 +52,12 @@ main{
 #info3{
     margin-left: 15vw;
 }
+
+#rect{
+    position: absolute;
+    background-color: aquamarine;
+    z-index: -10;
+    width: 50%;
+    height: 500%;
+    transform: translate(63vw,-45vw) rotate(-45deg);
+}
