@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Georgia, 'Times New Roman', Times, serif
+}
+
+body {
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+}
+
+main{
+    display: grid;
+    grid-template-rows: repeat(2,auto);
+    row-gap: 8vw;
+    grid-template-areas:
+        "buttons"
+        "content";
+    justify-content: center;
+    height: 100%;
+    transform: translate(-12vw,-5vw) rotate(-45deg);
+}
+
+#content{
+    grid-area: content;
+    display: grid;
+    grid-template-rows: repeat(3,auto);
+    grid-template-areas:
+        "text"
+        "concept"
+        "info";
+}
+
+#text{
+    grid-area: text;
+}
+.concept{
+    grid-area: concept;
+}
+.info{
+    grid-area: info;
+    display: grid;
+    grid-template-rows: repeat(3,auto);
+}

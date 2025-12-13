@@ -1,0 +1,43 @@
+.title{
+    font-size: 4rem;
+    font-weight: 800;
+}
+.subtitle{
+    font-size: medium;
+    font-weight: 600;
+}
+.text{
+    font-size: medium;
+    font-weight: 100;
+}
+
+.button{ /*also subtitles*/
+    font-size: small;
+    font-weight: 100;
+    text-decoration: none;
+    color: black;
+}
+
+.button_selected{
+    font-weight: 4rem;
+    font-size: small;
+    text-decoration: none;
+    color: black;
+}
+
+#buttons{
+    bottom: 0;
+    grid-area: buttons;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    width: 33vw;
+    grid-template-areas:"button1 button2";
+    transition: transform 0.1s ease-out;
+    align-items: end;
+}
+#sobre{
+    grid-area: button1;
+}
+#conto{
+    grid-area: button2;
+}
