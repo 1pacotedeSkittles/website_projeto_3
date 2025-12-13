@@ -1,4 +1,4 @@
-const initial_limit=window.innerWidth*0.7;
+const initial_limit=window.innerWidth;
 const final_limit=0;
 
 //CONTAINER
