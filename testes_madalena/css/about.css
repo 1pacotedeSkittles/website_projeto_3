@@ -20,27 +20,34 @@ main{
         "content";
     justify-content: center;
     height: 100%;
-    transform: translate(-12vw,-5vw) rotate(-45deg);
+    transform: translate(-12vw,0vw) rotate(-45deg);
 }
 
 #content{
     grid-area: content;
     display: grid;
+    row-gap: 7vw;
     grid-template-rows: repeat(3,auto);
     grid-template-areas:
         "text"
-        "concept"
         "info";
 }
 
 #text{
     grid-area: text;
+    display: grid;
+    grid-template-rows: repeat(2,auto);
 }
-.concept{
-    grid-area: concept;
-}
-.info{
+
+#info{
     grid-area: info;
     display: grid;
     grid-template-rows: repeat(3,auto);
+    row-gap: 1vw;
+}
+#info2{
+    margin-left: 6vw;
+}
+#info3{
+    margin-left: 15vw;
 }
