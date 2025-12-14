@@ -1,0 +1,72 @@
+html {
+    /* Faz com que o scroll seja suave em vez de instantâneo */
+    scroll-behavior: smooth; 
+}
+body
+{
+    /* Altura aumentada para permitir múltiplos "segmentos" de scroll. */
+    height: 6000px;
+    margin: 0; /* Boas práticas */
+}
+
+#wrapper
+{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    border: 2px solid navy;
+    overflow:hidden;
+    z-index: 100;
+}
+
+/* Estilos de imagem (Mantidos) */
+.img-a {
+    position:absolute;
+    z-index: 101; 
+    width: 500px; 
+    height: 500px; 
+    top: 0;
+    left: 0;
+    object-fit: contain; 
+    display: none; 
+}
+
+.img-b
+{
+    position: absolute;
+    z-index: 101; 
+    width: 500px;
+    height: 500px; 
+    bottom: 0px;
+    right: 0px;
+    object-fit: contain;    
+    display: none;
+}
+
+/* Estilização do Overlay de Texto (Aplicada à classe) */
+.text-overlay {
+    position: absolute;
+    /* POSIÇÃO REMOVIDA AQUI, SERÁ DEFINIDA PELO JS */
+    
+    /* Rotação mantida em -45deg */
+    transform: rotate(-45deg); 
+    
+    width: 250px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #333;
+    font-family: sans-serif;
+    text-align: right;
+    z-index: 102; 
+    
+    /* FADE IN/OUT EM CSS */
+    opacity: 0; /* Início: Invisível */
+    visibility: hidden; /* Garante que não é clicável/selecionável quando invisível */
+    transition: opacity 0.3s ease-in-out, visibility 0.3s linear; /* Transição Suave */
+}
+
+/* Classe adicionada pelo JS para mostrar o texto */
+.text-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}       

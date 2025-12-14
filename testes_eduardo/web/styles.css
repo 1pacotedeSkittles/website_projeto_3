@@ -1,0 +1,89 @@
+/* Altura básica para permitir a rolagem */
+body {
+    margin: 0;
+    min-height: 400vh; 
+    overflow-x: hidden; 
+}
+
+/* Contentor que vai segurar o espaço */
+.scroll-placeholder {
+    height: 150vh; /* Ajusta este valor para controlar a duração da animação */
+    position: relative;
+}
+
+/* 2. Contentor da Animação (Fixo no centro do ecrã) */
+.diagonal-reveal {
+    position: fixed; 
+    top: 50%; 
+    left: 0;
+    transform: translateY(-50%); 
+    
+    width: 100%; 
+    height: 1000px; /* Mantém a altura média da secção */
+    
+    /* NOVO: Remove a capacidade de cortar o conteúdo para vermos a imagem na íntegra. 
+       Isso permitirá que as imagens se movam dentro do ecrã sem serem cortadas na vertical,
+       mas mantendo-se dentro da lógica de movimento que criámos. */
+    overflow: visible; 
+}
+
+/* 3. Posicionamento Inicial das Imagens */
+.image-left-container,
+.image-right-container {
+    position: absolute;
+    width: 35vw; 
+    
+    /* CORREÇÃO CRUCIAL: Reduz a altura da imagem para 60% para que caiba na caixa de 600px 
+       e evita o corte vertical. Ajuste este valor (ex: 70%, 80%) se as imagens forem muito altas. */
+    height: 60%; 
+    
+    /* CORREÇÃO: Altera o ponto de ancoragem para top: 20% para iniciar o movimento de baixo para o centro. */
+    top: 20%; 
+    z-index: 10;
+    transform-origin: center;
+    backface-visibility: hidden;
+}
+
+/* Imagem da Esquerda */
+.image-left-container {
+    left: 30%; 
+    /* NOVO: Começa -100% na horizontal (fora esquerda) E 100% na vertical (fora baixo) */
+    transform: translate(-100%, 100%); 
+}
+
+/* Imagem da Direita */
+.image-right-container {
+    right: 30%; 
+    /* NOVO: Começa 100% na horizontal (fora direita) E 100% na vertical (fora baixo) */
+    transform: translate(100%, 100%); 
+}
+
+.image-left-container img,
+.image-right-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* 2. Texto: Deve ser visível e não cortado */
+.text-content {
+    position: absolute;
+    /* Ajustei a posição do texto para a esquerda, para não ser cortado à direita */
+    left: 60%; 
+    top: 50%; 
+    transform: translateY(-50%); 
+    padding: 20px;
+    max-width: 35%; /* Aumentei a largura máxima */
+    text-align: left;
+    
+    opacity: 0; 
+    transition: opacity 0.5s ease-in-out; 
+    z-index: 5; 
+    color: #333; 
+    background-color: rgba(255, 255, 255, 0.9); 
+}
+
+.text-content.revealed {
+    opacity: 1;
+    z-index: 15; 
+}
