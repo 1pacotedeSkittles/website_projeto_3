@@ -6,8 +6,16 @@
     font-size: medium;
     font-weight: 600;
 }
+.subtitle_min{
+    font-size: small;
+    font-weight: 600;
+}
 .text{
     font-size: medium;
+    font-weight: 100;
+}
+.text_min{
+    font-size: small;
     font-weight: 100;
 }
 
