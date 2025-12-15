@@ -13,25 +13,26 @@ body {
 }
 
 
-#container , #container2{
-    position: fixed;
+#container {
+    position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-}
-#container {
+    transform: translate(-50%, -50%) translate(50vw,-70vh);
+    /*translate(70vw, 0);/*move 50% da propria largura e altura*/
     /*will-change: transform;
-    /*transform-origin: center;*/
-
-    /*translate(70vw, 0); /*para que x,y seja 0,0*/ 
+    /*transform-origin: center;*/ 
     transition: transform 0.1s ease-out;
 }
 
 #container2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -43px;
+    transform: translate(-50%, -50%) translate(-40vw, 70vh);;
+    /*translate(30vw,100vh); /*100vw-(70vw)*/ /*move 50% da propria largura e altura*/
     /*will-change: transform;
-    /*transform-origin: center;*/
-
-    /*translate(30vw,100vh); /*para que x,y seja 0,0*/ /*100vw-(70vw)*/  
+    /*transform-origin: center;*/  
     transition: transform 0.1s ease-out;
 }
 
@@ -48,29 +49,18 @@ body {
     color: red;
     float: left;
 }
-
-.item2 {
-    width: 300px;
-    height: 300px;
-    background: greenyellow;
-    margin: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 20px;
-    font-size: 32px;
-    color: black;
-    float: left;
-}*/
+*/
 
 .item , .item2{
     width: 300px;
     height: auto;
     display: block;
-   /*align-items: center;
-    /*float: left;*/
-    background-color: red;
+    align-items: center;
+    /*float: left;
+    background-color: red;*/
 }
+
+
 
 .instructions {
     position: fixed;

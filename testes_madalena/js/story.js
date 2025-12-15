@@ -1,21 +1,18 @@
-const pos_inicial = {
-    container1: { x: window.innerWidth * 0.7, y: 0 },
-    container2: { x: window.innerWidth * (1-0.7), y: window.innerHeight }
-};
-
 //CONTAINER
 
 const container = document.getElementById('container');
-let currentX = pos_inicial.container1.x;  // Começa à direita
-let currentY = pos_inicial.container1.y; // Começa acima
+const rect = container.getBoundingClientRect();
+let currentX = window.innerWidth*0.5; // centro X
+let currentY = -window.innerWidth*0.7; // centro Y
 let targetX = currentX;
 let targetY = currentY;
 
 //CONTAINER2
 
 const container2 = document.getElementById('container2');
-let currentX2 = pos_inicial.container2.x; // Começa à esquerda
-let currentY2 = pos_inicial.container2.y;  // Começa abaixo
+const rect2 = container2.getBoundingClientRect();
+let currentX2 = -window.innerWidth*0.5; // centro X
+let currentY2 = window.innerHeight*0.7; // centro Y
 let targetX2 = currentX2;
 let targetY2 = currentY2;
 
