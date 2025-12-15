@@ -1,14 +1,13 @@
 
 //CONTAINER
 const rect1 = document.getElementById('rect1');
-const content = document.getElementById('content');
+const main = document.getElementById('main');
 const bg_img = document.getElementById('bg_img');
 const rect2 = document.getElementById('rect2');
-const buttons = document.getElementById('buttons');
 
 //LIMITS
 const initial_limit=0;
-const final_limit= -window.innerWidth;
+const final_limit= window.innerWidth;
 
 //max
 let currentX = initial_limit;
@@ -32,11 +31,11 @@ window.addEventListener('wheel', (e) => {
 function animate() {
     // Interpolação suave (easing)
     currentX += (targetX - currentX) * 0.1;
-    rect1.style.transform = `translate(${currentX}px)`;
-    content.style.transform = `translate(${currentX}px)`;
-    bg_img.style.transform = `translate(${currentX}px)`;
-    rect2.style.transform = `translate(${currentX}px)`;
-    buttons.style.transform = `translate(${currentX}px)`;
+
+    rect1.style.transform = `translateX(${currentX}px, -84vw) rotate(-45deg)`;
+    main.style.transform = `translateX(${currentX}px, 0) rotate(-45deg)`;
+    bg_img.style.transform = `translateX(${currentX}px, -120vh) rotate(-45deg)`;
+    rect2.style.transform = `translateX(${currentX}px, -84vw) rotate(-45deg)`;
 
     requestAnimationFrame(animate); //chama se a si propria-loop infinito
 }
