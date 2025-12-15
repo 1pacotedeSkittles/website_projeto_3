@@ -10,6 +10,8 @@ let targetX = initial_limit;
 
 //CONTAINER2
 const container2 = document.getElementById('second_line');
+const buttons = document.getElementById('buttons');
+
 let currentX2 = -initial_limit;
 let targetX2 = -initial_limit;
 
@@ -44,6 +46,7 @@ function animate2() {
     // Interpolação suave (easing)
     currentX2 += (targetX2 - currentX2) * 0.1;
     container2.style.transform = `translate(${currentX2}px)`;
+    buttons.style.transform = `translate(${currentX2}px)`;
 
     requestAnimationFrame(animate2); //chama se a si propria-loop infinito
 }
