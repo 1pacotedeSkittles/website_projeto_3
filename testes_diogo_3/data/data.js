@@ -1,0 +1,18 @@
+function onTextReady(text) {
+
+const urls = text.split('\n');
+
+for (const url of urls) {
+    const image = document.createElement('img');
+    image.src = url;
+    document.body.append(image);
+}
+}
+
+function onResponse(response) {
+return response.text();
+}
+
+fetch('links_url.txt')
+.then(onResponse)
+.then(onTextReady);
