@@ -46,9 +46,3 @@ main{
     line-height: 1;
     display: block;
 }
-
-#warning{
-    position: fixed;
-    top: 5%;
-    place-self: center;
-}

@@ -45,3 +45,8 @@
     transition: transform 0.1s ease-out;
     align-items: end;
 }
+#warning{
+    position: fixed;
+    top: 5%;
+    place-self: center;
+}

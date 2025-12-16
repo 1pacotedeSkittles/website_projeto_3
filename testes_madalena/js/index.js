@@ -3,14 +3,6 @@
 const initial_limit=window.innerWidth;
 const final_limit=0;
 
-const initial_opacity=1;
-const final_opacity=0;
-
-//WARNING
-const warning = document.getElementById('warning');
-let current_opacity= initial_opacity;
-let target_ocpacity=initial_opacity;
-
 //CONTAINER
 const container = document.getElementById('first_line');
 //max
@@ -33,12 +25,10 @@ window.addEventListener('wheel', (e) => {
     const scrollAmount = e.deltaY;
     const newTargetX= targetX - scrollAmount * 0.7; // novo destino X
     const newTargetX2= targetX2 + scrollAmount * 0.7; // novo destino X
-    const newTarget_opacity= target_ocpacity - scrollAmount *0.7;
 
     //limite
     targetX= Math.min(Math.max(newTargetX,final_limit), initial_limit)
     targetX2= Math.min(Math.max(newTargetX2,-initial_limit), final_limit)
-    target_ocpacity=Math.min(Math.max(newTarget_opacity, -initial_opacity), final_opacity)
 }, { passive: false }); //permite usar prevent default
  
 
@@ -64,11 +54,3 @@ function animate2() {
 }
 
 animate2();
-
-function animate_warning(){
-    current_opacity += (target_ocpacity - current_opacity) * 0.09;
-    warning.style.opacity = current_opacity;
-    requestAnimationFrame(animate_warning); //chama se a si propria-loop infinito
-}
-
-animate_warning();
