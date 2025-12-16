@@ -22,14 +22,7 @@
     font-weight: 100;
 }
 
-.button{ /*also subtitles*/
-    font-size: small;
-    font-weight: 100;
-    text-decoration: none;
-    color: black;
-}
-
-.button_selected{
+.button{
     font-weight: 4rem;
     font-size: small;
     text-decoration: none;
@@ -49,4 +42,6 @@
     position: fixed;
     top: 5%;
     place-self: center;
+    color: black;
+    z-index: 30;
 }
