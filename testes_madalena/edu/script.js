@@ -13,6 +13,10 @@ var segment_height = $window.height();
 // Margem de segurança exterior para o texto
 var TEXT_OUTER_MARGIN = 20; 
 
+//parar o scroll
+//var scrollLocked=false;
+//var scrollLock_position=0;
+
 
 // FUNÇÃO PARA CALCULAR UMA POSIÇÃO ALEATÓRIA DENTRO DE ZONAS SEGURAS
 function getRandomPosition(text_width, text_height) {
@@ -60,28 +64,37 @@ function getRandomPosition(text_width, text_height) {
     return { top: min_y, left: min_x }; 
 }
 
-var total_scroll_height=numPairs*segment_height;
+//var total_scroll_height=numPairs*segment_height;
+var total_scroll_height=$(document).height() - $(window).height();
 
 //CONTAINER
 const final = document.getElementById('final');
 const wrapper = document.getElementById('wrapper');
 
 $window.scroll(function() {
-    var scroll_top = $window.scrollTop();
+   /* var scroll_top = $window.scrollTop();
 
-    if (scroll_top >= total_scroll_height * 0.9) {
+    if (scroll_top == total_scroll_height) {
         console.log('MOSTRANDO FINAL');
         final.style.visibility= 'visible';
         final.style.opacity= '1';
         wrapper.style.opacity= '0';
+        //scrollLocked=true;
+        //scrollLock_position=scroll_top;
+        //window.scrollTo(0, total_scroll_height*0.95);
 
-    } else {
+    } else{
         console.log('MOSTRANDO WRAPPER');
         final.style.visibility= 'hidden';        
         wrapper.style.opacity= '1';
         final.style.opacity= '0';
     }
-    
+
+    if(scrollLocked){
+        window.scrollTo(0, total_scroll_height*0.95);
+        return;
+    }*/
+
     $imgA.each(function(index) {
         var $a = $(this);
         var $b = $imgB.eq(index);
@@ -185,30 +198,9 @@ $window.scroll(function() {
     });
 });
 
-/*////SCRIPT ABOUT MODIFIED
-    window.addEventListener('wheel', (e) => {
-        if(FinalSection){
-            e.preventDefault();
-            
-        const scrollAmount = e.deltaY;
-        const newTargetX= targetX + scrollAmount * 0.7; // novo destino X
-
-        //limite
-        targetX= Math.min(Math.max(newTargetX,final_limit), initial_limit);
-        }
-}, { passive: false }); //permite usar prevent default
- 
-function animate() {
-    //let destination= FinalSection ? targetX: - window.innerWidth;
-    currentX += (targetX - currentX) * 0.1;
-
-    const vw =window.innerWidth/100;
-    const rect1_initialX=89*vw;
-    const rectsY=-169*vw;
-
-    rect1.style.transform = `translate(${rect1_initialX + currentX}px , ${rectsY}px) rotate(-45deg)`;
-    
-    requestAnimationFrame(animate); //chama se a si propria-loop infinito
-}
-
-animate();*/
+//SCRIPT ABOUT MODIFIED
+/*window.addEventListener('wheel', (e) => {
+    if(scrollLocked){
+        e.preventDefault();
+    }
+}, { passive: false }); //permite usar prevent default*/
