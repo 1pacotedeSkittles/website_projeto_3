@@ -100,11 +100,11 @@ function setRandomImages() {
         
         // Imagem A (Ímpar)
         $a.attr('src', '../img/' + random_odd_num + '.png');
-        $a.attr('alt', 'Imagem ' + random_odd_num + ' (Esquerda - Ímpar)');
+        //$a.attr('alt', 'Imagem ' + random_odd_num + ' (Esquerda - Ímpar)');
         
         // Imagem B (Par)
         $b.attr('src', '../img/' + random_even_num + '.png');
-        $b.attr('alt', 'Imagem ' + random_even_num + ' (Direita - Par)');
+        //$b.attr('alt', 'Imagem ' + random_even_num + ' (Direita - Par)');
     });
 }
 
@@ -189,7 +189,7 @@ $window.scroll(function() {
         var a_top_range = 2 * a_limit; 
         var a_left_range = 2 * (-a_limit); 
         var a_top_start = center_y - a_limit;
-        var a_left_start = center_x - (-a_limit); 
+        var a_left_start = center_x + a_limit; 
 
 
         // --- IMAGEM B ---
