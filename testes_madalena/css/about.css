@@ -25,7 +25,7 @@ main{
 #content{
     grid-area: content;
     display: grid;
-    row-gap: 7vw;
+    row-gap: 5vw;
     grid-template-rows: repeat(3,auto);
     grid-template-areas:
         "text"

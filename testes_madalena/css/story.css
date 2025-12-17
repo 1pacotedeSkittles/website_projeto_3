@@ -1,75 +1,118 @@
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+html {
+    /* Faz com que o scroll seja suave em vez de instantâneo */
+    scroll-behavior: smooth;
+    max-width: 100%;
+}
+body{
+    /* Altura aumentada para permitir múltiplos "segmentos" de scroll. */
+    height: 5000px;
+    margin: 0; /* Boas práticas */
+    overflow-x:hidden;
 }
 
-body {
-    overflow: hidden;
-    background: #0a0a0a;
-    height: 100vh;
-    width: 100vw;
-}
-
-
-#container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) translate(50vw,-70vh);
-    /*translate(70vw, 0);/*move 50% da propria largura e altura*/
-    /*will-change: transform;
-    /*transform-origin: center;*/ 
-    transition: transform 0.1s ease-out;
-}
-
-#container2 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-top: -43px;
-    transform: translate(-50%, -50%) translate(-40vw, 70vh);;
-    /*translate(30vw,100vh); /*100vw-(70vw)*/ /*move 50% da propria largura e altura*/
-    /*will-change: transform;
-    /*transform-origin: center;*/  
-    transition: transform 0.1s ease-out;
-}
-
-/*.item {
-    width: 300px;
-    height: 300px;
-    background: white;
-    margin: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 20px;
-    font-size: 32px;
-    color: red;
-    float: left;
-}
-*/
-
-.item , .item2{
-    width: 300px;
-    height: auto;
-    display: block;
-    align-items: center;
-    /*float: left;
-    background-color: red;*/
-}
-
-
-
-.instructions {
+#wrapper{
+    width: 100%;
+    height: 100%;
     position: fixed;
-    top: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    background: rgba(255,255,255,0.1);
-    backdrop-filter: blur(10px);
-    color: white;
-    z-index: 10;
-    text-align: center;
+    overflow:hidden;
+    z-index: 100;
+    /*opacity: 1;
+    transition: opacity 0.5s ease-in-out;*/
+}
+
+/* Estilos de imagem (Mantidos) */
+.img-a {
+    position:absolute;
+    z-index: 101; 
+    width: 500px; 
+    height: 500px; 
+    top: 0;
+    left: 0;
+    object-fit: contain; 
+    display: none; 
+}
+
+.img-b
+{
+    position: absolute;
+    z-index: 101; 
+    width: 500px;
+    height: 500px; 
+    bottom: 0px;
+    right: 0px;
+    object-fit: contain;    
+    display: none;
+}
+
+/* Estilização do Overlay de Texto (Aplicada à classe) */
+.text-overlay {
+    position: absolute;
+    /* POSIÇÃO REMOVIDA AQUI, SERÁ DEFINIDA PELO JS */
+    
+    /* Rotação mantida em -45deg */
+    transform: rotate(-45deg); 
+    
+    width: 250px;
+    padding: 20px;
+    color: #333;
+    font-family: sans-serif;
+    text-align: right;
+    z-index: 102; 
+    
+    /* FADE IN/OUT EM CSS */
+    opacity: 0; /* Início: Invisível */
+    visibility: hidden; /* Garante que não é clicável/selecionável quando invisível */
+    transition: opacity 0.3s ease-in-out, visibility 0.3s linear; /* Transição Suave */
+}
+
+/* Classe adicionada pelo JS para mostrar o texto */
+.text-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+/*RECTS E BG_IMG*/
+/*content_story*/
+#rect1{
+    position: absolute;
+    background: white;
+    z-index: -10;
+    width: 500%;
+    height: 500%;
+    box-shadow: 0 80px 60px 0 rgba(13, 19, 51);
+    transform: translate(-48vw, 560vh) rotate(-45deg);
+}
+
+/*Final content*/
+#final_viewport{
+    position: fixed;
+    background-color: transparent;
+    overflow: hidden;
+    inset: 0;
+    z-index: -100;
+    opacity: 0;
+}
+#final{
+    transform: translate(-65vw, 20vh);
+}
+#bg_img{
+    position: absolute;
+    height: 1100%;
+    width: auto;
+    z-index: -14;
+    opacity: 0.5;
+    transform: translate(15vw,-48vw) rotate(-45deg);
+}
+#rect2_gradient{
+    position: absolute;
+    width: 300%;
+    height: 800%;
+    background: linear-gradient(0deg, rgb(173, 173, 173) 50%, rgba(255, 255, 255, 0.00) 97%);
+    transform: translate(-61vw, -19vw) rotate(45deg);
+    z-index: -12;
+}
+
+#content{
+    transform: translate(62vw,-13vw) rotate(-45deg);
+    z-index: -11;
 }
