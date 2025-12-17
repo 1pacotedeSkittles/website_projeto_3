@@ -5,7 +5,7 @@ html {
 }
 body{
     /* Altura aumentada para permitir múltiplos "segmentos" de scroll. */
-    height: 5000px;
+    height: 1000px!important;;
     margin: 0; /* Boas práticas */
     overflow-x:hidden;
 }
@@ -73,14 +73,15 @@ body{
 
 /*RECTS E BG_IMG*/
 /*content_story*/
-#rect1{
+#rect1 {
     position: absolute;
     background: white;
     z-index: -10;
     width: 500%;
     height: 500%;
     box-shadow: 0 80px 60px 0 rgba(13, 19, 51);
-    transform: translate(-48vw, 560vh) rotate(-45deg);
+    /* Altera de 560vh para cerca de 100vh ou 110vh */
+    transform: translate(-48vw, 80vh) rotate(-45deg); 
 }
 
 /*Final content*/
