@@ -58,7 +58,7 @@ const final = document.getElementById('final_viewport');
 $window.scroll(function() {
     var scroll_top = $window.scrollTop();
 
-    if (scroll_top >= total_scroll_height * 0.85) {
+    if (scroll_top >= total_scroll_height * 0.7) {
         final.style.opacity = '1';
     } else {
         final.style.opacity = '0';
