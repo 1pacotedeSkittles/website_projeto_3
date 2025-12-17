@@ -100,15 +100,15 @@ body{
     height: 1100%;
     width: auto;
     z-index: -14;
-    opacity: 0.3;
+    opacity: 0.5;
     transform: translate(15vw,-48vw) rotate(-45deg);
 }
 #rect2_gradient{
     position: absolute;
     width: 300%;
-    height: 500%;
-    background: linear-gradient(0deg, white 50%, rgba(255, 0, 0, 0.00) 97%);
-    transform: translate(-88vw, -19vw) rotate(45deg);
+    height: 800%;
+    background: linear-gradient(0deg, rgb(173, 173, 173) 50%, rgba(255, 255, 255, 0.00) 97%);
+    transform: translate(-61vw, -19vw) rotate(45deg);
     z-index: -12;
 }
 
