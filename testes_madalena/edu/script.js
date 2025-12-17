@@ -61,15 +61,29 @@ function getRandomPosition(text_width, text_height) {
 }
 
 var total_scroll_height=numPairs*segment_height;
+//CONTAINER
+const rect1 = document.getElementById('rect1');
+//LIMITS
+const initial_limit=-window.innerWidth;
+const final_limit= 0;
+
+let currentX = 0;
+let targetX = 0;
+
+let FinalSection = false;
 
 $window.scroll(function() {
     var scroll_top = $window.scrollTop();
-    //animation_on= scroll_top>= total_scroll_height * 0.9;
 
     if (scroll_top >= total_scroll_height * 0.9) {
-        $('#rect1, #rect2, #content').addClass('do_animation');
+        FinalSection=true;
+        if(targetX===0){
+            targetX=initial_limit;
+        }
+        $('#rect1').addClass('do_animation');
     } else {
-        $('#rect1, #rect2, #content').removeClass('do_animation');
+        FinalSection=false;
+        $('#rect1').removeClass('do_animation');
     }
     
     $imgA.each(function(index) {
@@ -173,24 +187,25 @@ $window.scroll(function() {
             $b.hide();
         }
     });
+});
 
     ////SCRIPT ABOUT MODIFIED
-    //CONTAINER
-    const rect1 = document.getElementById('rect1');
-    const content = document.getElementById('content');
-    const rect2 = document.getElementById('rect2');
+    window.addEventListener('wheel', (e) => {
+        if(FinalSection){
+            e.preventDefault();
+            
+        const scrollAmount = e.deltaY;
+        const newTargetX= targetX + scrollAmount * 0.7; // novo destino X
 
-/*//LIMITS
-const initial_limit=-window.innerWidth;
-const final_limit= 0;
-//max
-let currentX = initial_limit;
-//let parallaxX=0;
-//min
-let targetX = initial_limit;
+        //limite
+        targetX= Math.min(Math.max(newTargetX,final_limit), initial_limit);
+        }
+}, { passive: false }); //permite usar prevent default
+ 
+/*
+    let animation_on=false;
+    const newTargetX=0;
 
-let animation_on=false;
-const newTargetX=0;*/
 
     // Evento de scroll com o wheel
     var trigger_start=total_scroll_height*0.9;
@@ -201,10 +216,10 @@ const newTargetX=0;*/
     if(scroll_top >= trigger_start){
         progress=(scroll_top-trigger_start)/(trigger_end-trigger_start);
         progress=Math.max(0,Math.min(progress,1));
-        $('rect1,rect2').addClass('do_animation');
+        $('rect1').addClass('do_animation');
     }else if(scroll_top<trigger_start){
         progress=0;
-        $('rect1,rect2').removeClass('do_animation');
+        $('rect1').removeClass('do_animation');
     }else{
         progress=1;
     }
@@ -213,31 +228,19 @@ const newTargetX=0;*/
     var moveX= distance*progress;
 
     rect1.style.transform=`rotateX(-45deg) translateX(${moveX}px)`;
-    rect2.style.transform=`rotateX(-45deg) translateX(${moveX}px)`;
-});
+});*/
 
-// Animação suave com requestAnimationFrame
-/*function animate() {
-    if(animation_on){
-    // Interpolação suave (easing)
+function animate() {
+    //let destination= FinalSection ? targetX: - window.innerWidth;
     currentX += (targetX - currentX) * 0.1;
-    }else{
-    currentX += (initial_limit - currentX) * 0.1;
-    }
-    //parallaxX = currentX * 0.01;
 
     const vw =window.innerWidth/100;
-    const rect1_initialX=83*vw;
-    const rect2_initialX=-2*vw;
-    const rectsY=-84*vw;
-    let add =15*vw;
+    const rect1_initialX=89*vw;
+    const rectsY=-169*vw;
 
-
-    rect1.style.transform = `translate(${rect1_initialX + currentX + add }px , ${rectsY}px) rotate(-45deg)`;
-    //content.style.transform = `translateX(${parallaxX}px) rotate(-45deg)`;
-    rect2.style.transform = `translate(${rect2_initialX + currentX}px , ${rectsY}px) rotate(-45deg)`;
-
+    rect1.style.transform = `translate(${rect1_initialX + currentX}px , ${rectsY}px) rotate(-45deg)`;
+    
     requestAnimationFrame(animate); //chama se a si propria-loop infinito
 }
 
-animate();*/
+animate();
