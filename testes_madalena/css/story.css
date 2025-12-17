@@ -5,7 +5,7 @@ html {
 }
 body{
     /* Altura aumentada para permitir múltiplos "segmentos" de scroll. */
-    height: 5000px;
+    height: 200px;
     margin: 0; /* Boas práticas */
     overflow-x:hidden;
 }
@@ -71,8 +71,7 @@ body{
     visibility: visible;
 }
 
-/*RECTS E BG_IMG*/
-/*content_story*/
+/*rect1*/
 #rect1{
     position: absolute;
     background: white;
