@@ -13,11 +13,6 @@ var segment_height = $window.height();
 // Margem de segurança exterior para o texto
 var TEXT_OUTER_MARGIN = 20; 
 
-//parar o scroll
-//var scrollLocked=false;
-//var scrollLock_position=0;
-
-
 // FUNÇÃO PARA CALCULAR UMA POSIÇÃO ALEATÓRIA DENTRO DE ZONAS SEGURAS
 function getRandomPosition(text_width, text_height) {
     // Definimos a zona de exclusão central (50% do ecrã)
@@ -69,29 +64,16 @@ var total_scroll_height=$(document).height() - $(window).height();
 
 //CONTAINER
 const final = document.getElementById('final_viewport');
-//const wrapper = document.getElementById('wrapper');
 
 $window.scroll(function() {
     var scroll_top = $window.scrollTop();
 
     if (scroll_top >= total_scroll_height*0.85) {
-        console.log('MOSTRANDO FINAL');
-        //final.style.visibility= 'visible';
         final.style.opacity= '1';
-        //scrollLocked=true;
-        //scrollLock_position=scroll_top;
-        //window.scrollTo(0, total_scroll_height*0.95);
 
     } else{
-        console.log('MOSTRANDO WRAPPER');
-        //final.style.visibility= 'hidden';        
         final.style.opacity= '0';
     }
-
-    /*if(scrollLocked){
-        window.scrollTo(0, total_scroll_height*0.95);
-        return;
-    }*/
 
     $imgA.each(function(index) {
         var $a = $(this);
@@ -195,10 +177,3 @@ $window.scroll(function() {
         }
     });
 });
-
-//SCRIPT ABOUT MODIFIED
-/*window.addEventListener('wheel', (e) => {
-    if(scrollLocked){
-        e.preventDefault();
-    }
-}, { passive: false }); //permite usar prevent default*/
