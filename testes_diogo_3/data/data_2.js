@@ -3,18 +3,22 @@ function onDataReady(data) {
   //console.log('Dados recebidos:', data);
   
   const randomIndex = Math.floor(Math.random() * data.pirilau.length);
-  const randomUrl = data.pirilau[randomIndex];
+  const randomItem = data.pirilau[randomIndex];
+  
+  //Criamos os elementos apenas UMA vez (sem forEach)
+  const container = document.createElement('div');
+  const image = document.createElement('img');
+  const text = document.createElement('p');
 
-  //VAI BUSCAR O ARRAY DATA:PIRILAU E CORRE CADA UM INDIVIDUALMENTE
-  data.pirilau.forEach(url => {
-    const image = document.createElement('img');//CRIAÇÂO DO ELEMENTO IMG
-    image.src = randomUrl;//SRC DEFINE QUAL IMAGEM VAI APARECER
-    
-    image.onload = () => console.log('✅ Imagem carregada:', url);
-    image.onerror = () => console.error('❌ Erro ao carregar:', url);
-    
-    document.body.append(image);//PÁGINA HTML ADICIONA/COLA A IMAGEM NO FINAL DA PÁGINA
-  });
+  image.src = randomItem.url; // Usa a propriedade url do JSON
+  text.textContent = randomItem.text; // Usa a propriedade frase do JSON
+     
+  image.onload = () => console.log('✅ Imagem carregada:', randomItem.url);
+  image.onerror = () => console.error('❌ Erro ao carregar:', randomItem.url);
+  
+  container.append(image);
+  container.append(text);
+  document.body.append(container);//PÁGINA HTML ADICIONA/COLA A IMAGEM NO FINAL DA PÁGINA
 }
 
 //CONVERSÂO DA RESPOSTA EM JSON
