@@ -1,22 +1,23 @@
 html {
     /* Faz com que o scroll seja suave em vez de instantâneo */
-    scroll-behavior: smooth; 
+    scroll-behavior: smooth;
+    overflow-x:hidden;
+    max-width: 100%;
 }
-body
-{
+body{
     /* Altura aumentada para permitir múltiplos "segmentos" de scroll. */
-    height: 6000px;
+    height: 5000px;
     margin: 0; /* Boas práticas */
 }
 
-#wrapper
-{
+#wrapper{
     width: 100%;
     height: 100%;
     position: fixed;
-    border: 2px solid navy;
     overflow:hidden;
     z-index: 100;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
 }
 
 /* Estilos de imagem (Mantidos) */
@@ -70,38 +71,43 @@ body
     visibility: visible;
 }
 
-
-
 /*RECTS E BG_IMG*/
+/*content_story*/
 #rect1{
     position: absolute;
-    background: red;
+    background: white;
     z-index: -10;
-    width: 125%;
+    width: 500%;
     height: 500%;
     box-shadow: 0 80px 80px 0 rgba(13, 19, 51);
+    transform: translate(-48vw, 560vh) rotate(-45deg);
 }
-#rect1.do_animation{
-    transition: transform 1s ease;
+
+/*Final content*/
+#final{
+    visibility: hidden;
+    transition: opacity 0.5s ease-in-out, visibility 0.5s linear;
+    opacity: 0;
+    transform: translate(-52vw, 1300vh) rotate(45deg);*/
 }
 #bg_img{
     position: absolute;
     height: 215%;
     width: auto;
-    z-index: -30;
+    z-index: -13;
     opacity: 0.5;
-    transform: translate(-58vw, -62vh) rotate(-45deg);
+    /*transform: translate(-58vw, -62vh) rotate(-45deg);*/
 }
 #rect2_gradient{
     position: absolute;
     width: 300%;
-    height: 100%;
-    background: linear-gradient(0deg, white 56%, rgba(255, 255, 255, 0.00) 97%);
-    transform: translate(-138vw, -8vw) rotate(45deg);
-    z-index: -20;
+    height: 300%;
+    background: linear-gradient(0deg, red 56%, rgba(255, 0, 0, 0.00) 97%);
+    transform: translate(-138vw, -19vw);
+    z-index: -12;
 }
 
 #content{
-    transform: translate(-4vw,-2vw) rotate(-45deg);
-    z-index: -15;
+    /*transform: translate(-4vw,-2vw) rotate(-45deg);*/
+    z-index: -11;
 }

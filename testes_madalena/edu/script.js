@@ -61,29 +61,25 @@ function getRandomPosition(text_width, text_height) {
 }
 
 var total_scroll_height=numPairs*segment_height;
+
 //CONTAINER
-const rect1 = document.getElementById('rect1');
-//LIMITS
-const initial_limit=-window.innerWidth;
-const final_limit= 0;
-
-let currentX = 0;
-let targetX = 0;
-
-let FinalSection = false;
+const final = document.getElementById('final');
+const wrapper = document.getElementById('wrapper');
 
 $window.scroll(function() {
     var scroll_top = $window.scrollTop();
 
     if (scroll_top >= total_scroll_height * 0.9) {
-        FinalSection=true;
-        if(targetX===0){
-            targetX=initial_limit;
-        }
-        $('#rect1').addClass('do_animation');
+        console.log('MOSTRANDO FINAL');
+        final.style.visibility= 'visible';
+        final.style.opacity= '1';
+        wrapper.style.opacity= '0';
+
     } else {
-        FinalSection=false;
-        $('#rect1').removeClass('do_animation');
+        console.log('MOSTRANDO WRAPPER');
+        final.style.visibility= 'hidden';        
+        wrapper.style.opacity= '1';
+        final.style.opacity= '0';
     }
     
     $imgA.each(function(index) {
@@ -189,7 +185,7 @@ $window.scroll(function() {
     });
 });
 
-    ////SCRIPT ABOUT MODIFIED
+/*////SCRIPT ABOUT MODIFIED
     window.addEventListener('wheel', (e) => {
         if(FinalSection){
             e.preventDefault();
@@ -202,34 +198,6 @@ $window.scroll(function() {
         }
 }, { passive: false }); //permite usar prevent default
  
-/*
-    let animation_on=false;
-    const newTargetX=0;
-
-
-    // Evento de scroll com o wheel
-    var trigger_start=total_scroll_height*0.9;
-    var trigger_end=total_scroll_height*1.5;
-
-    var progress=0;
-
-    if(scroll_top >= trigger_start){
-        progress=(scroll_top-trigger_start)/(trigger_end-trigger_start);
-        progress=Math.max(0,Math.min(progress,1));
-        $('rect1').addClass('do_animation');
-    }else if(scroll_top<trigger_start){
-        progress=0;
-        $('rect1').removeClass('do_animation');
-    }else{
-        progress=1;
-    }
-
-    var distance=600;
-    var moveX= distance*progress;
-
-    rect1.style.transform=`rotateX(-45deg) translateX(${moveX}px)`;
-});*/
-
 function animate() {
     //let destination= FinalSection ? targetX: - window.innerWidth;
     currentX += (targetX - currentX) * 0.1;
@@ -243,4 +211,4 @@ function animate() {
     requestAnimationFrame(animate); //chama se a si propria-loop infinito
 }
 
-animate();
+animate();*/
