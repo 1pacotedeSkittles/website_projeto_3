@@ -1,3 +1,6 @@
+*{
+    font-family:Georgia, 'Times New Roman', Times, serif
+} 
 .title{
     font-size: 4rem;
     font-weight: 800;
@@ -19,14 +22,7 @@
     font-weight: 100;
 }
 
-.button{ /*also subtitles*/
-    font-size: small;
-    font-weight: 100;
-    text-decoration: none;
-    color: black;
-}
-
-.button_selected{
+.button{
     font-weight: 4rem;
     font-size: small;
     text-decoration: none;
@@ -41,4 +37,11 @@
     width: 33vw;
     transition: transform 0.1s ease-out;
     align-items: end;
+}
+#warning{
+    position: fixed;
+    top: 5%;
+    place-self: center;
+    color: black;
+    z-index: 30;
 }

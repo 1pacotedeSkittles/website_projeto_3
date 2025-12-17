@@ -1,3 +1,5 @@
+
+//LIMITS
 const initial_limit=window.innerWidth;
 const final_limit=0;
 
@@ -15,6 +17,7 @@ const buttons = document.getElementById('buttons');
 let currentX2 = -initial_limit;
 let targetX2 = -initial_limit;
 
+
 // Evento de scroll com o wheel
 window.addEventListener('wheel', (e) => {
     e.preventDefault(); //bloqueia o scroll normal da pagina
@@ -26,7 +29,6 @@ window.addEventListener('wheel', (e) => {
     //limite
     targetX= Math.min(Math.max(newTargetX,final_limit), initial_limit)
     targetX2= Math.min(Math.max(newTargetX2,-initial_limit), final_limit)
-
 }, { passive: false }); //permite usar prevent default
  
 
