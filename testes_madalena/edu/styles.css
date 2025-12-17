@@ -90,6 +90,7 @@ body{
     overflow: hidden;
     inset: 0;
     z-index: -100;
+    opacity: 0;
 }
 #final{
     transform: translate(-65vw, 20vh);

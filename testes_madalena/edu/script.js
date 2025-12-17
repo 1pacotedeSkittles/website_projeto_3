@@ -68,29 +68,27 @@ function getRandomPosition(text_width, text_height) {
 var total_scroll_height=$(document).height() - $(window).height();
 
 //CONTAINER
-const final = document.getElementById('final');
-const wrapper = document.getElementById('wrapper');
+const final = document.getElementById('final_viewport');
+//const wrapper = document.getElementById('wrapper');
 
 $window.scroll(function() {
-   /* var scroll_top = $window.scrollTop();
+    var scroll_top = $window.scrollTop();
 
-    if (scroll_top == total_scroll_height) {
+    if (scroll_top >= total_scroll_height*0.85) {
         console.log('MOSTRANDO FINAL');
-        final.style.visibility= 'visible';
+        //final.style.visibility= 'visible';
         final.style.opacity= '1';
-        wrapper.style.opacity= '0';
         //scrollLocked=true;
         //scrollLock_position=scroll_top;
         //window.scrollTo(0, total_scroll_height*0.95);
 
     } else{
         console.log('MOSTRANDO WRAPPER');
-        final.style.visibility= 'hidden';        
-        wrapper.style.opacity= '1';
+        //final.style.visibility= 'hidden';        
         final.style.opacity= '0';
     }
 
-    if(scrollLocked){
+    /*if(scrollLocked){
         window.scrollTo(0, total_scroll_height*0.95);
         return;
     }*/
