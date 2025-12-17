@@ -1,11 +1,14 @@
 //USA OS DADOS PARA CRIAR IMAGENS
 function onDataReady(data) {
-  console.log('Dados recebidos:', data);
+  //console.log('Dados recebidos:', data);
   
+  const randomIndex = Math.floor(Math.random() * data.pirilau.length);
+  const randomUrl = data.pirilau[randomIndex];
+
   //VAI BUSCAR O ARRAY DATA:PIRILAU E CORRE CADA UM INDIVIDUALMENTE
   data.pirilau.forEach(url => {
     const image = document.createElement('img');//CRIAÇÂO DO ELEMENTO IMG
-    image.src = url;//SRC DEFINE QUAL IMAGEM VAI APARECER
+    image.src = randomUrl;//SRC DEFINE QUAL IMAGEM VAI APARECER
     
     image.onload = () => console.log('✅ Imagem carregada:', url);
     image.onerror = () => console.error('❌ Erro ao carregar:', url);
