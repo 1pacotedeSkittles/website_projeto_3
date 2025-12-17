@@ -6,6 +6,8 @@ for (const url of urls) {
     const image = document.createElement('img');
     image.src = url;
     document.body.append(image);
+
+    //código retirado de IA
     image.onload = () => console.log('✅ Imagem carregada:', url);
     image.onerror = () => console.error('❌ Erro ao carregar:', url);
 }
