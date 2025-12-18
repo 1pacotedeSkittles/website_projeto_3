@@ -5,10 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="854b1b43-0ef7-45c4-a89a-1926ce620909" name="Changes" comment="correção de height story.html">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/data.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/images_data.json" beforeDir="false" afterPath="$PROJECT_DIR$/js/images_data.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/scroll_diagonal.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/scroll_diagonal.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +86,7 @@
       <workItem from="1766022071645" duration="275000" />
       <workItem from="1766060694229" duration="1858000" />
       <workItem from="1766073669205" duration="136000" />
-      <workItem from="1766076143567" duration="2508000" />
+      <workItem from="1766076143567" duration="3053000" />
     </task>
     <task id="LOCAL-00001" summary="Codigo todo correto">
       <option name="closed" value="true" />
