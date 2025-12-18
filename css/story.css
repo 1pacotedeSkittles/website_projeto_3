@@ -5,7 +5,7 @@ html {
 body
 {
     /* CORRIGIDO: Altura aumentada para 21 segmentos de scroll (21 * 1000px) */
-    height: 21000px;
+    height: 21500px;
     margin: 0;
 }
 
@@ -36,8 +36,8 @@ body
     z-index: 101; 
     width: 500px;
     height: 500px; 
-    bottom: 0px;
-    right: 0px;
+    bottom: 0;
+    right: 0;
     object-fit: contain;    
     display: none;
 }
