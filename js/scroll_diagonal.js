@@ -92,7 +92,11 @@ function initScrollAnimation(numPairs) {
         } else {
             $final.removeClass('visible');
             $wrapper.removeClass('invisible');
-
+        }
+        if (scroll_top >= total_scroll_height * 0.90) {
+            $final.addClass('visible');
+        } else {
+            $final.removeClass('visible');
         }
 
         $imgA.each(function(index) {

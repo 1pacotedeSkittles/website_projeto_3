@@ -6,7 +6,7 @@ html {
 body
 {
     /* CORRIGIDO: Altura aumentada para 21 segmentos de scroll (21 * 1000px) */
-    height: 17001px;
+    height: 12100px;
     margin: 0;
     overflow-x:hidden;
 }
@@ -85,7 +85,7 @@ body
     height: 500%;
     box-shadow: 0 80px 60px 0 rgba(13, 19, 51);
     /* Altera de 560vh para cerca de 100vh ou 110vh */
-    transform: translate(-42vw, 1670vh) rotate(-45deg); 
+    transform: translate(-57vw, 1665vh) rotate(-45deg); 
 }
 
 #final_viewport{
