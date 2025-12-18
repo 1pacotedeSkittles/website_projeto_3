@@ -86,7 +86,7 @@ function initScrollAnimation(numPairs) {
         var segment_height = vh;
 
         //FINAL PART
-        if (scroll_top >= total_scroll_height * 0.84) {
+        if (scroll_top >= total_scroll_height * 0.83) {
             $final.addClass('visible');
             $wrapper.addClass('invisible');
         } else {
