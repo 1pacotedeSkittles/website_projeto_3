@@ -1,197 +1,197 @@
 {
-    "pirilau": [
+    "images": [
                 {
-                "url":"https://raw.githubusercontent.com/1pacotedeSkittles/website_projeto_3/refs/heads/master/images/1.png",
-                "text": "...vivia de tal maneira que, a princípio apenas para alcançar o perfeccionismo, mais tarde também por um hábito que se tornou tirânico, passava o dia e a noite no trapézio..." 
-                },
-
-                {
-                "url":"https://raw.githubusercontent.com/1pacotedeSkittles/website_projeto_3/refs/heads/master/images/2.png",
-                "text": "...pelo período de duração de um contrato..." 
+                "path":"https://raw.githubusercontent.com/1pacotedeSkittles/website_projeto_3/refs/heads/master/images/1.png",
+                "desc": "...vivia de tal maneira que, a princípio apenas para alcançar o perfeccionismo, mais tarde também por um hábito que se tornou tirânico, passava o dia e a noite no trapézio..." 
                 },
 
                 {
-                "url":"https://raw.githubusercontent.com/1pacotedeSkittles/website_projeto_3/refs/heads/master/images/3.png",
-                "text": "...Todas as suas necessidades, aliás bastante modestas, eram satisfeitas por vários criados..." 
+                "path":"https://raw.githubusercontent.com/1pacotedeSkittles/website_projeto_3/refs/heads/master/images/2.png",
+                "desc": "...pelo período de duração de um contrato..." 
                 },
 
                 {
-                "url":"https://raw.githubusercontent.com/1pacotedeSkittles/website_projeto_3/refs/heads/master/images/4.png",
-                "text": "...faziam subir e descer, por meio de uns recipientes construídos para o efeito, tudo o que lá em cima era necessário..." 
+                "path":"https://raw.githubusercontent.com/1pacotedeSkittles/website_projeto_3/refs/heads/master/images/3.png",
+                "desc": "...Todas as suas necessidades, aliás bastante modestas, eram satisfeitas por vários criados..." 
                 },
 
                 {
-                "url":"https://raw.githubusercontent.com/1pacotedeSkittles/website_projeto_3/refs/heads/master/images/5.png",
-                "text": "...atrapalhava um pouco tê-lo lá em cima dado que era impossível escondê-lo e, apesar de nessas alturas ele se comportar de modo bastante sossegado..." 
+                "path":"https://raw.githubusercontent.com/1pacotedeSkittles/website_projeto_3/refs/heads/master/images/4.png",
+                "desc": "...faziam subir e descer, por meio de uns recipientes construídos para o efeito, tudo o que lá em cima era necessário..." 
                 },
 
                 {
-                "url":"https://raw.githubusercontent.com/1pacotedeSkittles/website_projeto_3/refs/heads/master/images/6.png",
-                "text": "...o olhar do público desviava-se aqui e ali na sua direção..." 
+                "path":"https://raw.githubusercontent.com/1pacotedeSkittles/website_projeto_3/refs/heads/master/images/5.png",
+                "desc": "...atrapalhava um pouco tê-lo lá em cima dado que era impossível escondê-lo e, apesar de nessas alturas ele se comportar de modo bastante sossegado..." 
                 },
 
                 {
-                "url":"https://raw.githubusercontent.com/1pacotedeSkittles/website_projeto_3/refs/heads/master/images/7.png",
-                "text": "...Mas os diretores desculpavam-lho por se tratar de um artista excecional, insubstituível..." 
+                "path":"https://raw.githubusercontent.com/1pacotedeSkittles/website_projeto_3/refs/heads/master/images/6.png",
+                "desc": "...o olhar do público desviava-se aqui e ali na sua direção..." 
+                },
+
+                {
+                "path":"https://raw.githubusercontent.com/1pacotedeSkittles/website_projeto_3/refs/heads/master/images/7.png",
+                "desc": "...Mas os diretores desculpavam-lho por se tratar de um artista excecional, insubstituível..." 
                 },
 
                                 {
-                "url":"https://raw.githubusercontent.com/1pacotedeSkittles/website_projeto_3/refs/heads/master/images/8.png",
-                "text": "...de facto precisava de se manter em permanente exercício, que só assim conseguia assegurar a perfeição da sua arte..." 
+                "path":"https://raw.githubusercontent.com/1pacotedeSkittles/website_projeto_3/refs/heads/master/images/8.png",
+                "desc": "...de facto precisava de se manter em permanente exercício, que só assim conseguia assegurar a perfeição da sua arte..." 
                 },
 
                                 {
-                "url":"https://raw.githubusercontent.com/1pacotedeSkittles/website_projeto_3/refs/heads/master/images/9.png",
-                "text": "...pelo espaço sombrio adentro..." 
+                "path":"https://raw.githubusercontent.com/1pacotedeSkittles/website_projeto_3/refs/heads/master/images/9.png",
+                "desc": "...pelo espaço sombrio adentro..." 
                 },
 
                                 {
-                "url":"https://raw.githubusercontent.com/1pacotedeSkittles/website_projeto_3/refs/heads/master/images/10.png",
-                "text": "...se abriam as janelas laterais ao longo de toda a abóbada e o sol entrava com o ar fresco..." 
+                "path":"https://raw.githubusercontent.com/1pacotedeSkittles/website_projeto_3/refs/heads/master/images/10.png",
+                "desc": "...se abriam as janelas laterais ao longo de toda a abóbada e o sol entrava com o ar fresco..." 
                 },
 
                                 {
-                "url":"https://raw.githubusercontent.com/1pacotedeSkittles/website_projeto_3/refs/heads/master/images/11.png",
-                "text": "...uns trabalhadores que arranjavam o telhado e trocavam umas palavras com ele por uma janela aberta..." 
+                "path":"https://raw.githubusercontent.com/1pacotedeSkittles/website_projeto_3/refs/heads/master/images/11.png",
+                "desc": "...uns trabalhadores que arranjavam o telhado e trocavam umas palavras com ele por uma janela aberta..." 
                 },
 
                                 {
-                "url":"https://raw.githubusercontent.com/1pacotedeSkittles/website_projeto_3/refs/heads/master/images/12.png",
-                "text": "...por vezes com um colega acrobata que trepava a escada de corda e ficavam os dois sentados em cima do trapézio..." 
+                "path":"https://raw.githubusercontent.com/1pacotedeSkittles/website_projeto_3/refs/heads/master/images/12.png",
+                "desc": "...por vezes com um colega acrobata que trepava a escada de corda e ficavam os dois sentados em cima do trapézio..." 
                 },
 
                                 {
-                "url":"https://raw.githubusercontent.com/1pacotedeSkittles/website_projeto_3/refs/heads/master/images/13.png",
-                "text": "...É claro que o empresário fazia por proteger o trapezista..." 
+                "path":"https://raw.githubusercontent.com/1pacotedeSkittles/website_projeto_3/refs/heads/master/images/13.png",
+                "desc": "...É claro que o empresário fazia por proteger o trapezista..." 
                 },
 
                                 {
-                "url":"https://raw.githubusercontent.com/1pacotedeSkittles/website_projeto_3/refs/heads/master/images/14.png",
-                "text": "...Assim podia ter vivido tranquilamente o trapezista, não fossem as inevitáveis viagens..." 
+                "path":"https://raw.githubusercontent.com/1pacotedeSkittles/website_projeto_3/refs/heads/master/images/14.png",
+                "desc": "...Assim podia ter vivido tranquilamente o trapezista, não fossem as inevitáveis viagens..." 
                 },
 
                                 {
-                "url":"https://raw.githubusercontent.com/1pacotedeSkittles/website_projeto_3/refs/heads/master/images/15.png",
-                "text": "...Para as viagens dentro das cidades utilizavam-se carros de corrida..." 
+                "path":"https://raw.githubusercontent.com/1pacotedeSkittles/website_projeto_3/refs/heads/master/images/15.png",
+                "desc": "...Para as viagens dentro das cidades utilizavam-se carros de corrida..." 
                 },
 
                                 {
-                "url":"https://raw.githubusercontent.com/1pacotedeSkittles/website_projeto_3/refs/heads/master/images/16.png",
-                "text": "...velocidade, apesar de tudo, sempre lenta demais para a ansiedade do trapezista..." 
+                "path":"https://raw.githubusercontent.com/1pacotedeSkittles/website_projeto_3/refs/heads/master/images/16.png",
+                "desc": "...velocidade, apesar de tudo, sempre lenta demais para a ansiedade do trapezista..." 
                 },
 
                                 {
-                "url":"https://raw.githubusercontent.com/1pacotedeSkittles/website_projeto_3/refs/heads/master/images/17.png",
-                "text": "...a sua habitual maneira de viver passando a viagem na prateleira da bagagem..." 
+                "path":"https://raw.githubusercontent.com/1pacotedeSkittles/website_projeto_3/refs/heads/master/images/17.png",
+                "desc": "...a sua habitual maneira de viver passando a viagem na prateleira da bagagem..." 
                 },
 
                                 {
-                "url":"https://raw.githubusercontent.com/1pacotedeSkittles/website_projeto_3/refs/heads/master/images/18.png",
-                "text": "...No comboio era reservada uma carruagem inteira..." 
+                "path":"https://raw.githubusercontent.com/1pacotedeSkittles/website_projeto_3/refs/heads/master/images/18.png",
+                "desc": "...No comboio era reservada uma carruagem inteira..." 
                 },
 
                                 {
-                "url":"https://raw.githubusercontent.com/1pacotedeSkittles/website_projeto_3/refs/heads/master/images/19.png",
-                "text": "...as portas que levavam ao auditório escancaradas..." 
+                "path":"https://raw.githubusercontent.com/1pacotedeSkittles/website_projeto_3/refs/heads/master/images/19.png",
+                "desc": "...as portas que levavam ao auditório escancaradas..." 
                 },
 
                                 {
-                "url":"https://raw.githubusercontent.com/1pacotedeSkittles/website_projeto_3/refs/heads/master/images/20.png",
-                "text": "...todos os corredores desimpedidos..." 
+                "path":"https://raw.githubusercontent.com/1pacotedeSkittles/website_projeto_3/refs/heads/master/images/20.png",
+                "desc": "...todos os corredores desimpedidos..." 
                 },
 
                                 {
-                "url":"https://raw.githubusercontent.com/1pacotedeSkittles/website_projeto_3/refs/heads/master/images/21.png",
-                "text": "...os momentos mais bonitos sempre foram aqueles em que o trapezista punha o pé na escada de corda..." 
+                "path":"https://raw.githubusercontent.com/1pacotedeSkittles/website_projeto_3/refs/heads/master/images/21.png",
+                "desc": "...os momentos mais bonitos sempre foram aqueles em que o trapezista punha o pé na escada de corda..." 
                 },
 
                                 {
-                "url":"https://raw.githubusercontent.com/1pacotedeSkittles/website_projeto_3/refs/heads/master/images/22.png",
-                "text": "...e num instante voltava a pendurar-se no seu trapézio lá em cima..." 
+                "path":"https://raw.githubusercontent.com/1pacotedeSkittles/website_projeto_3/refs/heads/master/images/22.png",
+                "desc": "...e num instante voltava a pendurar-se no seu trapézio lá em cima..." 
                 },
 
                                 {
-                "url":"https://raw.githubusercontent.com/1pacotedeSkittles/website_projeto_3/refs/heads/master/images/23.png",
-                "text": "...as viagens destruíam os nervos do trapezista..." 
+                "path":"https://raw.githubusercontent.com/1pacotedeSkittles/website_projeto_3/refs/heads/master/images/23.png",
+                "desc": "...as viagens destruíam os nervos do trapezista..." 
                 },
 
                                 {
-                "url":"https://raw.githubusercontent.com/1pacotedeSkittles/website_projeto_3/refs/heads/master/images/24.png",
-                "text": "...as que se seguiam voltavam a custar- lhe..." 
+                "path":"https://raw.githubusercontent.com/1pacotedeSkittles/website_projeto_3/refs/heads/master/images/24.png",
+                "desc": "...as que se seguiam voltavam a custar- lhe..." 
                 },
 
                                 {
-                "url":"https://raw.githubusercontent.com/1pacotedeSkittles/website_projeto_3/refs/heads/master/images/25.png",
-                "text": "...o trapezista deitado na prateleira da bagagem a sonhar..." 
+                "path":"https://raw.githubusercontent.com/1pacotedeSkittles/website_projeto_3/refs/heads/master/images/25.png",
+                "desc": "...o trapezista deitado na prateleira da bagagem a sonhar..." 
                 },
 
                                 {
-                "url":"https://raw.githubusercontent.com/1pacotedeSkittles/website_projeto_3/refs/heads/master/images/26.png",
-                "text": "...o empresário a ler um livro encostado à janela..." 
+                "path":"https://raw.githubusercontent.com/1pacotedeSkittles/website_projeto_3/refs/heads/master/images/26.png",
+                "desc": "...o empresário a ler um livro encostado à janela..." 
                 },
 
                                 {
-                "url":"https://raw.githubusercontent.com/1pacotedeSkittles/website_projeto_3/refs/heads/master/images/27.png",
-                "text": "...a aprovação do empresário lhe era tão insignificante quanto seria eventualmente a recusa..." 
+                "path":"https://raw.githubusercontent.com/1pacotedeSkittles/website_projeto_3/refs/heads/master/images/27.png",
+                "desc": "...a aprovação do empresário lhe era tão insignificante quanto seria eventualmente a recusa..." 
                 },
 
                                 {
-                "url":"https://raw.githubusercontent.com/1pacotedeSkittles/website_projeto_3/refs/heads/master/images/28.png",
-                "text": "...agora para o seu número, não de um, mas de dois trapézios, sempre dois trapézios, um em frente ao outro..." 
+                "path":"https://raw.githubusercontent.com/1pacotedeSkittles/website_projeto_3/refs/heads/master/images/28.png",
+                "desc": "...agora para o seu número, não de um, mas de dois trapézios, sempre dois trapézios, um em frente ao outro..." 
                 },
 
                                 {
-                "url":"https://raw.githubusercontent.com/1pacotedeSkittles/website_projeto_3/refs/heads/master/images/29.png",
-                "text": "...Só a ideia de que tal coisa alguma vez pudesse vir a acontecer parecia arrepiá-lo..." 
+                "path":"https://raw.githubusercontent.com/1pacotedeSkittles/website_projeto_3/refs/heads/master/images/29.png",
+                "desc": "...Só a ideia de que tal coisa alguma vez pudesse vir a acontecer parecia arrepiá-lo..." 
                 },
 
                                 {
-                "url":"https://raw.githubusercontent.com/1pacotedeSkittles/website_projeto_3/refs/heads/master/images/30.png",
-                "text": "...empresário, hesitante e atento, confirmou mais uma vez o seu total consentimento..." 
+                "path":"https://raw.githubusercontent.com/1pacotedeSkittles/website_projeto_3/refs/heads/master/images/30.png",
+                "desc": "...empresário, hesitante e atento, confirmou mais uma vez o seu total consentimento..." 
                 },
 
                                 {
-                "url":"https://raw.githubusercontent.com/1pacotedeSkittles/website_projeto_3/refs/heads/master/images/31.png",
-                "text": "...juntou a cara dele à sua de tal maneira que também sobre ele se derramaram as lágrimas..." 
+                "path":"https://raw.githubusercontent.com/1pacotedeSkittles/website_projeto_3/refs/heads/master/images/31.png",
+                "desc": "...juntou a cara dele à sua de tal maneira que também sobre ele se derramaram as lágrimas..." 
                 },
 
                                 {
-                "url":"https://raw.githubusercontent.com/1pacotedeSkittles/website_projeto_3/refs/heads/master/images/32.png",
-                "text": "...Foi então que de repente o trapezista começou a chorar. Profundamente assustado..." 
+                "path":"https://raw.githubusercontent.com/1pacotedeSkittles/website_projeto_3/refs/heads/master/images/32.png",
+                "desc": "...Foi então que de repente o trapezista começou a chorar. Profundamente assustado..." 
                 },
 
                                 {
-                "url":"https://raw.githubusercontent.com/1pacotedeSkittles/website_projeto_3/refs/heads/master/images/33.png",
-                "text": "...“Com apenas esta barra nas mãos... como posso eu viver!”..." 
+                "path":"https://raw.githubusercontent.com/1pacotedeSkittles/website_projeto_3/refs/heads/master/images/33.png",
+                "desc": "...“Com apenas esta barra nas mãos... como posso eu viver!”..." 
                 },
 
                                 {
-                "url":"https://raw.githubusercontent.com/1pacotedeSkittles/website_projeto_3/refs/heads/master/images/34.png",
-                "text": "...prometeu- lhe que já na próxima estação enviaria um telegrama para a localidade onde iriam atuar..." 
+                "path":"https://raw.githubusercontent.com/1pacotedeSkittles/website_projeto_3/refs/heads/master/images/34.png",
+                "desc": "...prometeu- lhe que já na próxima estação enviaria um telegrama para a localidade onde iriam atuar..." 
                 },
 
                                 {
-                "url":"https://raw.githubusercontent.com/1pacotedeSkittles/website_projeto_3/refs/heads/master/images/35.png",
-                "text": "...Repreendeu-se a si próprio por ter deixado o trapezista trabalhar durante tanto tempo em cima de um só trapézio..." 
+                "path":"https://raw.githubusercontent.com/1pacotedeSkittles/website_projeto_3/refs/heads/master/images/35.png",
+                "desc": "...Repreendeu-se a si próprio por ter deixado o trapezista trabalhar durante tanto tempo em cima de um só trapézio..." 
                 },
 
                                 {
-                "url":"https://raw.githubusercontent.com/1pacotedeSkittles/website_projeto_3/refs/heads/master/images/36.png",
-                "text": "...Assim conseguiu o empresário sossegar aos poucos o trapezista e pôde voltar ao seu canto..." 
+                "path":"https://raw.githubusercontent.com/1pacotedeSkittles/website_projeto_3/refs/heads/master/images/36.png",
+                "desc": "...Assim conseguiu o empresário sossegar aos poucos o trapezista e pôde voltar ao seu canto..." 
                 },
 
                                 {
-                "url":"https://raw.githubusercontent.com/1pacotedeSkittles/website_projeto_3/refs/heads/master/images/37.png",
-                "text": "...observava por sobre o livro, em segredo, o trapezista..." 
+                "path":"https://raw.githubusercontent.com/1pacotedeSkittles/website_projeto_3/refs/heads/master/images/37.png",
+                "desc": "...observava por sobre o livro, em segredo, o trapezista..." 
                 },
 
                                 {
-                "url":"https://raw.githubusercontent.com/1pacotedeSkittles/website_projeto_3/refs/heads/master/images/38.png",
-                "text": "...Mas ele próprio não estava sossegado..." 
+                "path":"https://raw.githubusercontent.com/1pacotedeSkittles/website_projeto_3/refs/heads/master/images/38.png",
+                "desc": "...Mas ele próprio não estava sossegado..." 
                 },
 
                                 {
-                "text": "às vezes um empregado que passeasse por exemplo à tarde pelo teatro vazio. De resto, à sua volta era o silêncio;" 
+                "desc": "às vezes um empregado que passeasse por exemplo à tarde pelo teatro vazio. De resto, à sua volta era o silêncio;" 
                 }
 
                ]
