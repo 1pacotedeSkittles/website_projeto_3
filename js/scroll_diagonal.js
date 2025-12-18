@@ -86,18 +86,18 @@ function initScrollAnimation(numPairs) {
         var segment_height = vh;
 
         //FINAL PART
-        if (scroll_top >= total_scroll_height * 0.83) {
+        if (scroll_top >= total_scroll_height * 0.90) {
             $final.addClass('visible');
             $wrapper.addClass('invisible');
         } else {
             $final.removeClass('visible');
             $wrapper.removeClass('invisible');
         }
-        if (scroll_top >= total_scroll_height * 0.90) {
+        /*if (scroll_top >= total_scroll_height * 0.90) {
             $final.addClass('visible');
         } else {
             $final.removeClass('visible');
-        }
+        }*/
 
         $imgA.each(function(index) {
             var $a = $(this);
