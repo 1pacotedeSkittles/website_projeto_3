@@ -1,23 +1,21 @@
 html {
     /* Faz com que o scroll seja suave em vez de instantâneo */
-    scroll-behavior: smooth;
-    max-width: 100%;
+    scroll-behavior: smooth; 
 }
-body{
-    /* Altura aumentada para permitir múltiplos "segmentos" de scroll. */
-    height: 200px;
-    margin: 0; /* Boas práticas */
-    overflow-x:hidden;
+body
+{
+    /* CORRIGIDO: Altura aumentada para 21 segmentos de scroll (21 * 1000px) */
+    height: 21500px;
+    margin: 0;
 }
 
-#wrapper{
+#wrapper
+{
     width: 100%;
     height: 100%;
     position: fixed;
     overflow:hidden;
     z-index: 100;
-    /*opacity: 1;
-    transition: opacity 0.5s ease-in-out;*/
 }
 
 /* Estilos de imagem (Mantidos) */
@@ -38,8 +36,8 @@ body{
     z-index: 101; 
     width: 500px;
     height: 500px; 
-    bottom: 0px;
-    right: 0px;
+    bottom: 0;
+    right: 0;
     object-fit: contain;    
     display: none;
 }
@@ -69,49 +67,4 @@ body{
 .text-overlay.active {
     opacity: 1;
     visibility: visible;
-}
-
-/*rect1*/
-#rect1{
-    position: absolute;
-    background: white;
-    z-index: -10;
-    width: 500%;
-    height: 500%;
-    box-shadow: 0 80px 60px 0 rgba(13, 19, 51);
-    transform: translate(-48vw, 560vh) rotate(-45deg);
-}
-
-/*Final content*/
-#final_viewport{
-    position: fixed;
-    background-color: transparent;
-    overflow: hidden;
-    inset: 0;
-    z-index: -100;
-    opacity: 0;
-}
-#final{
-    transform: translate(-65vw, 20vh);
-}
-#bg_img{
-    position: absolute;
-    height: 1100%;
-    width: auto;
-    z-index: -14;
-    opacity: 0.5;
-    transform: translate(15vw,-48vw) rotate(-45deg);
-}
-#rect2_gradient{
-    position: absolute;
-    width: 300%;
-    height: 800%;
-    background: linear-gradient(0deg, rgb(173, 173, 173) 50%, rgba(255, 255, 255, 0.00) 97%);
-    transform: translate(-61vw, -19vw) rotate(45deg);
-    z-index: -12;
-}
-
-#content{
-    transform: translate(62vw,-13vw) rotate(-45deg);
-    z-index: -11;
 }
