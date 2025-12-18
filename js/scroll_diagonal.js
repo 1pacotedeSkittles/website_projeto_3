@@ -1,6 +1,8 @@
 var $window = $(window);
 var $wrapper = $('#wrapper');
 var $final = $('#final_viewport');
+//BUTTONS
+var $buttons = $('#buttons_conto');
 
 function shuffle(array) {
     for (let i = array.length - 1; i > 0; i--) {
@@ -83,6 +85,14 @@ function initScrollAnimation() {
         } else {
             $final.removeClass('visible');
             $wrapper.css('opacity', '1');
+        }
+        //BUTTONS_STORY
+        if (scroll_top >= total_scroll_height * 0.01) {
+            $buttons.css('transform', 'translate(1vw, 1vh) rotate(0deg)');
+            $buttons.css('width', '10vw');
+        }else{
+            $buttons.css('transform', 'translate(1vw, 12vh) rotate(-45deg)');
+            $buttons.css('width', '33vw');
         }
 
         $imgA.each(function(index) {

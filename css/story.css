@@ -130,6 +130,7 @@ body
     grid-template-columns: repeat(2,1fr);
     width: 33vw;
     align-items: end;
-    transform: translate(1vw, 12vh) rotate(-45deg);
     z-index: 200;
+    transform: translate(1vw, 12vh) rotate(-45deg);
+    transition: transform 0.5s ease-in-out, width 0.5s ease-in-out;
 }
