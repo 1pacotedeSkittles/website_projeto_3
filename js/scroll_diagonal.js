@@ -1,5 +1,7 @@
 var $window = $(window);
 var $wrapper = $('#wrapper');
+//FINAL PART
+var $final = $('#final_viewport');
 
 // 1. Função para baralhar arrays (Fisher-Yates)
 function shuffle(array) {
@@ -75,12 +77,23 @@ function initScrollAnimation(numPairs) {
     var $imgA = $('.img-a');
     var $imgB = $('.img-b');
     var $textOverlays = $('.text-overlay');
-
+    //FINAL PART
     $window.scroll(function() {
         var scroll_top = $window.scrollTop();
+        var total_scroll_height = $(document).height() - $(window).height();
         var vh = $window.height();
         var vw = $window.width();
         var segment_height = vh;
+
+        //FINAL PART
+        if (scroll_top >= total_scroll_height * 0.84) {
+            $final.addClass('visible');
+            $wrapper.addClass('invisible');
+        } else {
+            $final.removeClass('visible');
+            $wrapper.removeClass('invisible');
+
+        }
 
         $imgA.each(function(index) {
             var $a = $(this);

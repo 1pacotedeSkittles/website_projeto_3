@@ -1,12 +1,14 @@
 html {
     /* Faz com que o scroll seja suave em vez de instantâneo */
     scroll-behavior: smooth; 
+    max-width: 100%;
 }
 body
 {
     /* CORRIGIDO: Altura aumentada para 21 segmentos de scroll (21 * 1000px) */
     height: 17001px;
     margin: 0;
+    overflow-x:hidden;
 }
 
 #wrapper
@@ -16,6 +18,11 @@ body
     position: fixed;
     overflow:hidden;
     z-index: 100;
+    background-color: transparent;
+    opacity: 1;
+}
+#wrapper.invisible{
+    opacity: 0;
 }
 
 /* Estilos de imagem (Mantidos) */
@@ -67,4 +74,52 @@ body
 .text-overlay.active {
     opacity: 1;
     visibility: visible;
+}
+
+/*FINAL PART*/
+#rect1 {
+    position: absolute;
+    background: white;
+    z-index: 50;
+    width: 500%;
+    height: 500%;
+    box-shadow: 0 80px 60px 0 rgba(13, 19, 51);
+    /* Altera de 560vh para cerca de 100vh ou 110vh */
+    transform: translate(-42vw, 1670vh) rotate(-45deg); 
+}
+
+#final_viewport{
+    position: fixed;
+    background-color: transparent;
+    overflow: hidden;
+    inset: 0;
+    z-index: 40;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+#final_viewport.visible{
+    opacity: 1;
+}
+#final{
+    transform: translate(-65vw, 20vh);
+}
+#bg_img{
+    position: absolute;
+    z-index: 2;
+    opacity: 0.5;
+    transform: translate(-59vw,-61vh) rotate(-45deg);
+}
+#rect2_gradient{
+    position: absolute;
+    width: 300%;
+    height: 550%;
+    background: linear-gradient(0deg, rgb(173, 173, 173) 50%, rgba(255, 255, 255, 0.00) 97%);
+    transform: translate(-67vw, 0vh) rotate(45deg);
+    z-index: 3;
+}
+
+#content{
+    position: relative;
+    transform: translate(62vw,-13vw) rotate(-45deg);
+    z-index: 4;
 }
