@@ -2,23 +2,26 @@
 function onDataReady(data) {
   //console.log('Dados recebidos:', data);
   
-  const randomIndex = Math.floor(Math.random() * data.pirilau.length);
-  const randomItem = data.pirilau[randomIndex];
-  
-  //Criamos os elementos apenas UMA vez (sem forEach)
-  const container = document.createElement('div');
-  const image = document.createElement('img');
-  const text = document.createElement('p');
+// Usamos o método sort com um valor aleatório entre -0.5 e 0.5
+  const listaBaralhada = data.pirilau.sort(() => Math.random() - 0.5);
 
-  image.src = randomItem.url; // Usa a propriedade url do JSON
-  text.textContent = randomItem.text; // Usa a propriedade frase do JSON
-     
-  image.onload = () => console.log('✅ Imagem carregada:', randomItem.url);
-  image.onerror = () => console.error('❌ Erro ao carregar:', randomItem.url);
-  
-  container.append(image);
-  container.append(text);
-  document.body.append(container);//PÁGINA HTML ADICIONA/COLA A IMAGEM NO FINAL DA PÁGINA
+  // 2. Usamos o forEach para percorrer os 43 itens agora baralhados
+  listaBaralhada.forEach(item => {
+    const container = document.createElement('div');
+    const image = document.createElement('img');
+
+    image.src = item.url;
+    
+    //ajuste átoa das imagens
+    image.style.width = '200px'; 
+    image.style.margin = '10px';
+
+    image.onload = () => console.log('✅ Carregada:', item.url);
+    image.onerror = () => console.error('❌ Erro:', item.url);
+
+    container.append(image);
+    document.body.append(container);
+  });
 }
 
 //CONVERSÂO DA RESPOSTA EM JSON
