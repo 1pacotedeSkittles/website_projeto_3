@@ -123,3 +123,13 @@ body
     transform: translate(62vw,-13vw) rotate(-45deg);
     z-index: 4;
 }
+
+#buttons_conto{
+    position: fixed;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    width: 33vw;
+    align-items: end;
+    transform: translate(1vw, 12vh) rotate(-45deg);
+    z-index: 200;
+}
