@@ -1,6 +1,9 @@
 var $window = $(window);
 var $wrapper = $('#wrapper');
 
+var total_scroll_height = $(document).height() - $(window).height();
+const final = document.getElementById('final_viewport');
+
 // 1. Função para baralhar arrays (Fisher-Yates)
 function shuffle(array) {
     for (let i = array.length - 1; i > 0; i--) {
@@ -81,6 +84,12 @@ function initScrollAnimation(numPairs) {
         var vh = $window.height();
         var vw = $window.width();
         var segment_height = vh;
+
+        if (scroll_top >= total_scroll_height * 0.60) {
+            final.style.opacity = '1';
+        } else {
+            final.style.opacity = '0';
+        }
 
         $imgA.each(function(index) {
             var $a = $(this);
