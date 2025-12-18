@@ -6,13 +6,13 @@ const content = document.getElementById('content');
 const rect2 = document.getElementById('rect2');
 
 //LIMITS
-const initial_limit=-window.innerWidth;
-const final_limit= 0;
+const min_limit=-window.innerWidth;
+const max_limit= 0;
 //max
-let currentX = initial_limit;
+let currentX = min_limit;
 let parallaxX=0;
 //min
-let targetX = initial_limit;
+let targetX = min_limit;
 
 
 // Evento de scroll com o wheel
@@ -20,10 +20,10 @@ window.addEventListener('wheel', (e) => {
     e.preventDefault(); //bloqueia o scroll normal da pagina
             
     const scrollAmount = e.deltaY;
-    const newTargetX= targetX - scrollAmount * 0.7; // novo destino X
+    const newTargetX= targetX + scrollAmount * 0.7; // novo destino X
     
     //limite
-    targetX= Math.max(Math.min(newTargetX,initial_limit), final_limit)
+    targetX= Math.max(min_limit, Math.min(newTargetX,max_limit))
 }, { passive: false }); //permite usar prevent default
  
 
@@ -41,8 +41,6 @@ function animate() {
 
 
     rect1.style.transform = `translate(${rect1_initialX + currentX + add }px , ${rectsY}px) rotate(-45deg)`;
-    //buttons.style.transform = `translateX(${parallaxX}px)`;
-    //content.style.transform = `translateX(${parallaxX}px)`;
     rect2.style.transform = `translate(${rect2_initialX + currentX}px , ${rectsY}px) rotate(-45deg)`;
 
     requestAnimationFrame(animate); //chama se a si propria-loop infinito
