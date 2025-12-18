@@ -112,9 +112,9 @@ body
 #rect2_gradient{
     position: absolute;
     width: 300%;
-    height: 550%;
+    height: 1000%;
     background: linear-gradient(0deg, rgb(173, 173, 173) 50%, rgba(255, 255, 255, 0.00) 97%);
-    transform: translate(-67vw, 0vh) rotate(45deg);
+    transform: translate(-67vw, -45vh) rotate(45deg);
     z-index: 3;
 }
 
