@@ -5,7 +5,7 @@ html {
 body
 {
     /* CORRIGIDO: Altura aumentada para 21 segmentos de scroll (21 * 1000px) */
-    height: 21500px;
+    height: 17000px;
     margin: 0;
 }
 

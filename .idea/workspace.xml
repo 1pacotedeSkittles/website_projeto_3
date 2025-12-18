@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="854b1b43-0ef7-45c4-a89a-1926ce620909" name="Changes" comment="adicionei json e criacao de imagens a partir do json" />
+    <list default="true" id="854b1b43-0ef7-45c4-a89a-1926ce620909" name="Changes" comment="adicionei json e criacao de imagens a partir do json">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -48,7 +50,7 @@
     "PHP Built-in Web Server.Unnamed.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "eduardo",
+    "git-widget-placeholder": "master",
     "last_opened_file_path": "C:/Users/arauj/OneDrive/Documentos/#UNI/3_Ano/1_semestre/P3/#META4/website_projeto_3",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -81,6 +83,7 @@
       <updated>1766015296990</updated>
       <workItem from="1766015298479" duration="2627000" />
       <workItem from="1766022071645" duration="275000" />
+      <workItem from="1766060694229" duration="609000" />
     </task>
     <task id="LOCAL-00001" summary="Codigo todo correto">
       <option name="closed" value="true" />
